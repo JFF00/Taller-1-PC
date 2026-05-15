@@ -1,0 +1,11 @@
+rank,id,titulo,score,categorias
+1,603,Buprestidae,0.030062,Buprestoidea
+2,604,Buprestoidea,0.024374,Buprestoidea
+3,3872,Euphorbia,0.023903,Euphorbia; Cat_8486; Cat_8503
+4,4516,Enzyme,0.020726,Metabolism; Enzymes; Biomolecules
+5,304,Schizopodidae,0.013326,Buprestoidea; Cat_16478
+6,6268,Bacteria,0.011709,Bacteriology; Microbiology; Greek_loanwords; Bacteria
+7,544889,Worcester,0.006702,People_from_Worcester
+8,5385,Neuron,0.006562,Nervous_system; Medical_terms
+9,2033,Laboulbeniales,0.006146,Laboulbeniomycetes
+10,6284,Metabolism,0.005718,Metabolism

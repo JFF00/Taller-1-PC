@@ -1,0 +1,13 @@
+Resumen de análisis
+Total nodos: 5000
+Avg in-degree: 3.76
+Avg out-degree: 3.76
+Max in-degree: 549
+Max out-degree: 231
+DFS visitó: 2291 nodos
+BFS camino 32776->9519: 2
+
+Patrones observados:
+- Concentración de enlaces: max/avg in-degree=145.9, max/avg out-degree=61.4.
+- Coincidencia PageRank vs in-degree: 8/10 nodos.
+- Categoría dominante en el Top PageRank: Buprestoidea (3).

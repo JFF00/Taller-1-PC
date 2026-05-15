@@ -135,14 +135,13 @@ class Grafo:
         # Si llegamos aquí, no hay camino entre los nodos
         return None
 
-    def pagerank(self, iteraciones):
+    def pagerank(self, iteraciones, d=0.85):
         """ 
-        Iteraciones y grado de amortiguación(d) están hardcodeadas.
-        d=0.85, se utiliza normalmente este valor para quitar peso a las páginas y evitar que páginas sin peso se beneficien.
+        Iteraciones y grado de amortiguación(d) están parametrizados.
+        d=0.85 se utiliza normalmente este valor para quitar peso a las páginas y evitar que páginas sin peso se beneficien.
         iteraciones=20
         """
         n = len(self.nodos)
-        d = 0.85
         puntaje_inicial = 1.0 / n
         nodos_puntajes_iniciales = dict.fromkeys(self.nodos, puntaje_inicial)
         for i in range(iteraciones):

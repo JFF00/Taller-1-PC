@@ -60,7 +60,7 @@ class WikipediaLoader:
                             pagina_categoria[id_pag].append(id_cat)
         return pagina_categoria
 
-    def crear_nodos_por_bloque_categorias(self, limite_nodos=1000):
+    def crear_nodos_por_bloque_categorias(self, limite_nodos=5000):
         nodos = {}
         paginas_seleccionadas = set()
         cat_name = self.nombres_categorias()
@@ -130,9 +130,9 @@ class WikipediaLoader:
 
         return nodos
 
-    def get_nodos(self):
-        # 1. Filtra y crea 1000 nodos que pertenecen a las primeras categorías del dataset
-        nodos_filtrados = self.crear_nodos_por_bloque_categorias(1000)
+    def get_nodos(self, limite_nodos=5000):
+        # 1. Filtra y crea nodos que pertenecen a las primeras categorías del dataset
+        nodos_filtrados = self.crear_nodos_por_bloque_categorias(limite_nodos)
         # 2. Solo inyecta los links que conectan a esos 1000 entre sí
         nodos_con_links = self.cargar_enlaces(nodos_filtrados)
         return nodos_con_links
